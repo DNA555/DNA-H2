@@ -1,22 +1,53 @@
+
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial;
     margin: 0;
 }
 
 header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;    
+    background-color: black;
+}
+
+header h1 {
+    display: flex;
+    align-self: flex-start;
+    padding: 14px 14px;
+    color: white;
+    border: solid;
+}
+
+figure {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin: inherit;
+    background: url("../images/stripes.jpg");
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+h2 {
+    margin: inherit;
+    border: 10px solid blue;
+    background-color: blue;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+
 }
 
 header nav a {
     
-    padding: 14px 20px;
-    color: maroon;
+    padding: 10px 10px;
+    color: white;
     text-align: center;
     text-decoration: none;
     border-bottom:solid;
