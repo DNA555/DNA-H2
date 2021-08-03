@@ -24,6 +24,18 @@ header h1 {
     border: solid;
 }
 
+header nav {
+    display: inherit;
+}
+
+header nav a {
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom:solid;
+}
+
 figure {
     display: flex;
     height: 304px;
@@ -45,14 +57,7 @@ h2 {
 
 }
 
-header nav a {
-    
-    padding: 10px 10px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-bottom:solid;
-}
+
 
 main {
     display:flex;
@@ -60,11 +65,13 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-    header, h1{
+    header, h1, nav{
         flex-direction: column;
         width: 100%;
         justify-content: center;
         text-align: center;
+        
     }
-    
+
+
 }
