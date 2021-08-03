@@ -26,7 +26,7 @@ header h1 {
 
 figure {
     display: flex;
-    height: 400px;
+    height: 304px;
     width: 100%;
     margin: inherit;
     background: url("../images/stripes.jpg");
@@ -36,9 +36,10 @@ figure {
 }
 
 h2 {
+    display: inherit;
     margin: inherit;
-    border: 10px solid blue;
-    background-color: blue;
+    border: 10px solid black;
+    background-color: gray;
     padding: 20px 20px;
     color: rgb(255, 255, 255);
 
@@ -56,4 +57,14 @@ header nav a {
 main {
     display:flex;
 
+}
+
+@media only screen and (max-width: 768px) {
+    header, h1{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
 }
