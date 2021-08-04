@@ -1,5 +1,7 @@
 :root {
-    --bgc: black;
+    --mainpadding:5px 5px;
+    --myborder:5px solid  black;
+    --m-s-h1-padding:8px 8px;
 }
 
 * {
@@ -15,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bgc);
+    background-color: black;
 }
 
 header h1 {
@@ -55,7 +57,7 @@ figure {
 h2 {
     display: inherit;
     margin: inherit;
-    border: 10px solid var(--bgc);
+    border: var(--myborder);
     background-color: gray;
     padding: 20px 20px;
     color: rgb(255, 255, 255);
@@ -63,7 +65,24 @@ h2 {
 }
 
 main {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    display: inherit;
+    margin: 0;
+    align-items: center;
+}
+
+main section h1 {
+    padding:var(--m-s-h1-padding);
+}
+
+#ContactMe a {
+    text-decoration: none;
+    padding: var(--mainpadding);
+    border: var(--myborder);
 
 }
 
