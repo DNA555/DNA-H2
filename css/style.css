@@ -1,4 +1,6 @@
-
+:root {
+    --bgc: black;
+}
 
 * {
     box-sizing: border-box;
@@ -13,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: var(--bgc);
 }
 
 header h1 {
@@ -53,14 +55,12 @@ figure {
 h2 {
     display: inherit;
     margin: inherit;
-    border: 10px solid black;
+    border: 10px solid var(--bgc);
     background-color: gray;
     padding: 20px 20px;
     color: rgb(255, 255, 255);
 
 }
-
-
 
 main {
     display:flex;
@@ -73,8 +73,10 @@ main {
         width: 100%;
         justify-content: center;
         text-align: center;
-        margin-left: 0px;
     }
-
+    header nav a {
+        margin-left: 0px;
+        border: 0px;
+    }
 
 }
