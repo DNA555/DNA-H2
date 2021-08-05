@@ -2,6 +2,10 @@
     --mainpadding:5px 5px;
     --myborder:5px solid  black;
     --m-s-h1-padding:8px 8px;
+    --cmpadding: 10px 10px;
+    --m-s-h1-border: 10px dotted black;
+    --h-n-dropdown:box-shadow: 0px 8px 16px gray;
+    --h-n-dropdownpadding: 20px 20px;
 }
 
 * {
@@ -33,6 +37,7 @@ header nav {
     justify-content: space-evenly;
 }
 
+
 header nav a {
     margin-left: 5px;
     padding: 10px 10px;
@@ -42,6 +47,7 @@ header nav a {
     border:solid;
 
 }
+
 
 figure {
     display: flex;
@@ -54,19 +60,15 @@ figure {
     
 }
 
-h2 {
-    display: inherit;
-    margin: inherit;
-    border: var(--myborder);
-    background-color: gray;
-    padding: 20px 20px;
-    color: rgb(255, 255, 255);
-
-}
-
 main {
     display: flex;
     flex-direction: column;
+}
+
+main section p {
+    padding:var(--mainpadding);
+    text-align: justify;
+    margin: 10px;
 }
 
 main section {
@@ -77,25 +79,33 @@ main section {
 
 main section h1 {
     padding:var(--m-s-h1-padding);
+    border:var(--m-s-h1-border);
+    font-size: 2rem;
 }
 
 #ContactMe a {
     text-decoration: none;
-    padding: var(--mainpadding);
+    margin:var(--cmpadding);
+    padding: var(--cmpadding);
     border: var(--myborder);
-
 }
 
 @media only screen and (max-width: 768px) {
-    header, h1, nav{
+    header, header h1, nav {
         flex-direction: column;
         width: 100%;
         justify-content: center;
         text-align: center;
     }
+
     header nav a {
         margin-left: 0px;
         border: 0px;
     }
+    
 
+    main section, #ContactMe a {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
