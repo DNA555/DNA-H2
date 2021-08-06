@@ -1,11 +1,10 @@
 :root {
-    --mainpadding:5px 5px;
-    --myborder:5px solid  black;
-    --m-s-h1-padding:8px 8px;
-    --cmpadding: 10px 10px;
-    --m-s-h1-border: 10px dotted black;
-    --h-n-dropdown:box-shadow: 0px 8px 16px gray;
-    --h-n-dropdownpadding: 20px 20px;
+    --mainpadding:0.313rem 0.313rem;
+    --myborder:0.313rem solid  black;
+    --m-s-h1-padding:0.5rem 0.5rem;
+    --cmpadding: 0.625rem 0.625rem;
+    --m-s-h1-border: 0.625rem dotted black;
+    --h-n-dropdownpadding: 1.25rem 1.25rem;
 }
 
 * {
@@ -27,7 +26,7 @@ header {
 header h1 {
     display: flex;
     align-self: flex-start;
-    padding: 14px 14px;
+    padding: 0.875rem 0.875rem;
     color: white;
     border: solid;
 }
@@ -39,8 +38,8 @@ header nav {
 
 
 header nav a {
-    margin-left: 5px;
-    padding: 10px 10px;
+    margin-left: 0.313rem;
+    padding: 0.625rem 0.625rem;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -51,25 +50,27 @@ header nav a {
 
 figure {
     display: flex;
-    height: 304px;
+    height: 19rem;
     width: 100%;
     margin: inherit;
     background: url("../images/stripes.jpg");
     align-items: flex-end;
     justify-content: flex-end;
-    
 }
 
 main {
     display: flex;
     flex-direction: column;
+    background-color: rgb(238, 227, 227);
 }
 
 main section p {
     padding:var(--mainpadding);
     text-align: justify;
-    margin: 10px;
+    margin: 0.625rem;
+    text-indent: 3.125rem;
 }
+/* Selects everything except the h1 element where the parent is a Work I.D. */
 
 main section {
     display: inherit;
@@ -77,10 +78,21 @@ main section {
     align-items: center;
 }
 
+#Work {
+    margin-right: 0.625rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Work :not(h1):hover {
+    content: url("../images/placeholder_a1.jpg");
+}
+
 main section h1 {
     padding:var(--m-s-h1-padding);
     border:var(--m-s-h1-border);
     font-size: 2rem;
+    margin: 1.25rem;
 }
 
 #ContactMe a {
@@ -103,9 +115,7 @@ main section h1 {
         border: 0px;
     }
     
-
     main section, #ContactMe a {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
     }
 }
